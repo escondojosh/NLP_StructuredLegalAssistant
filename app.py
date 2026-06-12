@@ -337,7 +337,21 @@ if not os.path.exists("chroma_db"):
     st.error("Vector database not found. Please run `python ingest.py` first.")
     st.stop()
 
+startup_slot = st.empty()
+startup_slot.markdown("""
+<div style="text-align:center; padding:40px 20px;">
+    <p style="font-family:'Source Serif 4',serif; font-size:16px; font-weight:600; color:#1a2744; margin-bottom:8px;">
+        Nilo-load ang sistema...
+    </p>
+    <p style="font-size:12px; color:#888; margin-bottom:16px;">
+        Inihahanda ang vector database at search indexes
+    </p>
+    <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
+</div>
+""", unsafe_allow_html=True)
+
 db, bm25, all_docs, all_meta = load_all()
+startup_slot.empty()
 
 # ── LLM Explainer via Groq ────────────────────────────────────────────────────
 def explain_with_llm(query, top_chunk):
@@ -400,9 +414,18 @@ with bc:
 # ── Results ───────────────────────────────────────────────────────────────────
 if query and (search_clicked or query):
 
+    search_slot = st.empty()
+    search_slot.markdown("""
+    <div style="padding:10px 0 4px 0;">
+        <span style="font-size:13px; color:#1a2744; font-weight:500;">Naghahanap sa mga ordinance...</span>
+    </div>
+    <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
+    """, unsafe_allow_html=True)
+
     vector_results = db.similarity_search_with_score(query, k=5)
     scores = bm25.get_scores(query.split())
     top_bm25_idx = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:5]
+    search_slot.empty()
 
     best_doc, best_score = vector_results[0]
     best_chunk = {
@@ -415,7 +438,9 @@ if query and (search_clicked or query):
     # Show animated loading bar while calling Groq
     loading_slot = st.empty()
     loading_slot.markdown("""
-    <p class="loading-label">⏳ Ginagawa ang paliwanag mula sa pinakamaugnay na ordinance...</p>
+    <div style="padding:10px 0 4px 0;">
+        <span style="font-size:13px; color:#1a2744; font-weight:500;">Ginagawa ang paliwanag...</span>
+    </div>
     <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
     """, unsafe_allow_html=True)
 
