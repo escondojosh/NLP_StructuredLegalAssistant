@@ -11,11 +11,11 @@ Built as a research project for **CCS 311 - CS33S1** at the **Technological Inst
 
 | Name | Role |
 |---|---|
-| Escondo, Joshua Peter Mari V. | Lead Developer |
-| Endic, Renz Ashton N. | Developer |
-| Estanil, Melcho O. | Developer |
-| Palmones, Ferdinand Jr. L. | Developer |
-| Obar, Ryndle Carl P. | Developer |
+| Escondo, Joshua Peter Mari V. |
+| Endic, Renz Ashton N. |
+| Estanil, Melcho O. |
+| Palmones, Ferdinand Jr. L. |
+| Obar, Ryndle Carl P. |
 
 **Instructor:** Mr. Jayson Carl Ferrer
 
@@ -33,10 +33,10 @@ Built as a research project for **CCS 311 - CS33S1** at the **Technological Inst
 
 | Method | Precision@5 | MRR |
 |---|---|---|
-| Vector Search (MiniLM) | 0.3840 | 0.4947 |
-| BM25 Keyword Search | 0.4320 | 0.5300 |
+| Vector Search (MiniLM) | 0.5760 | 0.6247 |
+| BM25 Keyword Search | 0.4400 | 0.5800 |
 
-BM25 outperformed vector search on this dataset, primarily due to OCR noise from scanned PDF sources degrading embedding quality.
+these results indicate that the vector-based retrieval approach is likely providing better search quality than traditional keyword-based BM25 retrieval on your evaluation dataset.
 
 ---
 
