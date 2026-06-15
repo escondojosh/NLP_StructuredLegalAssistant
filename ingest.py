@@ -2,13 +2,14 @@ import os
 import shutil
 import pytesseract
 from pdf2image import convert_from_path
+from PIL import ImageFilter, ImageEnhance
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 
 # ── Config ────────────────────────────────────────────────────────────────────
-pytesseract.pytesseract.tesseract_cmd = r'c:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 POPPLER_PATH = r'C:\Users\escon\Downloads\Release-26.02.0-0\poppler-26.02.0\Library\bin'
 PDF_FOLDER   = "data/ordinances"
 CHROMA_DIR   = "chroma_db"
@@ -42,11 +43,23 @@ for filename in sorted(os.listdir(PDF_FOLDER)):
         # Convert PDF pages to images
         pages = convert_from_path(
             temp_path,
-            dpi=200,
+            dpi=300,
             poppler_path=POPPLER_PATH
         )
 
-        # OCR each page
+        # ── Image preprocessing before OCR ───────────────────────────────────
+        cleaned_pages = []
+        for page_img in pages:
+            # Convert to grayscale
+            img = page_img.convert("L")
+            # Increase contrast to make text stand out
+            img = ImageEnhance.Contrast(img).enhance(2.0)
+            # Sharpen edges for crisper characters
+            img = img.filter(ImageFilter.SHARPEN)
+            cleaned_pages.append(img)
+        pages = cleaned_pages
+
+        # OCR each cleaned page
         page_texts = []
         for i, page_img in enumerate(pages):
             text = pytesseract.image_to_string(page_img, lang="eng")
@@ -92,8 +105,8 @@ if not docs:
 # ── Split into chunks ─────────────────────────────────────────────────────────
 print(f"\nSplitting into chunks...")
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
-    chunk_overlap=50,
+    chunk_size=1000,
+    chunk_overlap=100,
     separators=["\n\n", "\n", ".", " ", ""]
 )
 chunks = splitter.split_documents(docs)

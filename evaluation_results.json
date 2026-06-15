@@ -1,0 +1,612 @@
+{
+  "total_queries": 25,
+  "k": 5,
+  "vector_precision_at_k": 0.576,
+  "vector_mrr": 0.6247,
+  "bm25_precision_at_k": 0.44,
+  "bm25_mrr": 0.58,
+  "results": [
+    {
+      "query": "Pwede bang magsunugan ng basura sa bakuran?",
+      "relevant": [
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_precision": 0.8,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.8,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Ano ang parusa pag nagtapon ng basura sa ilog?",
+      "relevant": [
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_precision": 0.6,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.8,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Bawal ba ang maingay na makinarya sa residential area?",
+      "relevant": [
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_precision": 0.2,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.4,
+      "bm25_mrr": 0.25
+    },
+    {
+      "query": "Hanggang anong oras pwede ang malakas na sound system?",
+      "relevant": [
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_precision": 0.0,
+      "vector_mrr": 0.0,
+      "bm25_precision": 0.6,
+      "bm25_mrr": 0.5
+    },
+    {
+      "query": "Sino ang responsible sa pag-segregate ng basura?",
+      "relevant": [
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-No.-9107.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_precision": 0.4,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.8,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Magkano ang multa pag naka-park sa no parking zone?",
+      "relevant": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8327.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_precision": 1.0,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Pwede bang mag-counterflow sa one-way street pag emergency?",
+      "relevant": [
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "vector_precision": 1.0,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Anong oras bawal ang trucks sa main roads ng Manila?",
+      "relevant": [
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "vector_precision": 0.6,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Ano ang penalty kapag walang driver's license tapos nahuli?",
+      "relevant": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8327.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "vector_precision": 0.4,
+      "vector_mrr": 0.333,
+      "bm25_precision": 0.8,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Puwede bang mag-park sa tapat ng bahay ko kahit walang sign?",
+      "relevant": [
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_precision": 0.2,
+      "vector_mrr": 0.2,
+      "bm25_precision": 0.0,
+      "bm25_mrr": 0.0
+    },
+    {
+      "query": "Magkano ang bayad para makakuha ng business permit sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_precision": 0.2,
+      "vector_mrr": 0.25,
+      "bm25_precision": 0.6,
+      "bm25_mrr": 0.5
+    },
+    {
+      "query": "Kailangan pa bang mag-renew ng permit kahit hindi nag-operate?",
+      "relevant": [
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-No.-9107.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_precision": 0.2,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.4,
+      "bm25_mrr": 0.333
+    },
+    {
+      "query": "Ano ang penalties pag late ang pagbabayad ng local business tax?",
+      "relevant": [
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "vector_precision": 0.6,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.4,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "May diskwento ba para sa small business sa permit fees?",
+      "relevant": [
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "vector_precision": 0.8,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.2,
+      "bm25_mrr": 0.25
+    },
+    {
+      "query": "Sino ang exempt sa pagbabayad ng real property tax sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_precision": 0.8,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Ano ang gagawin ng barangay kapag may mosquito breeding site sa bahay?",
+      "relevant": [
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_precision": 1.0,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.2,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Magkano ang multa pag may natuklasang standing water sa property?",
+      "relevant": [
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8092.pdf"
+      ],
+      "vector_precision": 0.0,
+      "vector_mrr": 0.0,
+      "bm25_precision": 0.0,
+      "bm25_mrr": 0.0
+    },
+    {
+      "query": "Ilang beses pwedeng mag-inspect ang barangay official ng bahay para sa dengue?",
+      "relevant": [
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_precision": 0.6,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.0,
+      "bm25_mrr": 0.0
+    },
+    {
+      "query": "Sino ang may responsibilidad na mag-abate ng mosquito sa apartment?",
+      "relevant": [
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_precision": 0.8,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.2,
+      "bm25_mrr": 0.333
+    },
+    {
+      "query": "Ano ang kailangan gawin ng may-ari ng bakanteng lote para sa dengue?",
+      "relevant": [
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf",
+        "ORDINANCE-NO.-8355.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-NO.-8327.pdf"
+      ],
+      "vector_precision": 1.0,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.0,
+      "bm25_mrr": 0.0
+    },
+    {
+      "query": "Hanggang anong oras pwede mag-operate ang vendors sa public market?",
+      "relevant": [
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "vector_precision": 0.8,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.6,
+      "bm25_mrr": 1.0
+    },
+    {
+      "query": "Ano ang kailangan para makapag-apply ng stall sa palengke ng Manila?",
+      "relevant": [
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8092.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8327.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-NO.-8327.pdf"
+      ],
+      "vector_precision": 0.4,
+      "vector_mrr": 0.5,
+      "bm25_precision": 0.0,
+      "bm25_mrr": 0.0
+    },
+    {
+      "query": "Bawal ba ang ibang tao na mag-sublet ng stall sa public market?",
+      "relevant": [
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "vector_precision": 0.8,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.4,
+      "bm25_mrr": 0.333
+    },
+    {
+      "query": "Ano ang karapatan ng vendor kapag pinagbayad ng hindi authorized na fee?",
+      "relevant": [
+        "ORDINANCE-NO.-9170.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-9170.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-NO.-8331.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8327.pdf",
+        "ORDINANCE-NO.-8371.pdf",
+        "ORDINANCE-NO.-8331.pdf",
+        "ORDINANCE-No.-9107.pdf"
+      ],
+      "vector_precision": 0.2,
+      "vector_mrr": 0.333,
+      "bm25_precision": 0.0,
+      "bm25_mrr": 0.0
+    },
+    {
+      "query": "Ano ang mangyayari sa loan shark na kumuha ng 4Ps card ng benepisyaryo?",
+      "relevant": [
+        "ORDINANCE-No.-9107.pdf"
+      ],
+      "vector_sources": [
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-No.-9107.pdf"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-No.-9107.pdf",
+        "ORDINANCE-NO.-8371.pdf"
+      ],
+      "vector_precision": 1.0,
+      "vector_mrr": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_mrr": 1.0
+    }
+  ]
+}
