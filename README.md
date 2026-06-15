@@ -1,4 +1,3 @@
-cat > /home/claude/README.md << 'ENDOFFILE'
 # ⚖️ Structured Data Legal Assistant for Filipinos
 
 A Retrieval-Augmented Generation (RAG) system that allows Filipino citizens to search Manila City ordinances using natural Taglish queries. The system compares two retrieval methods — semantic vector search and BM25 keyword search — and uses an AI model to explain retrieved ordinance text in plain Taglish.
@@ -9,8 +8,8 @@ Built as a research project for **CCS 311 - CS33S1** at the **Technological Inst
 
 ## 👥 Team
 
-| Name | Role |
-|---|---|
+| Name |
+|---|
 | Escondo, Joshua Peter Mari V. |
 | Endic, Renz Ashton N. |
 | Estanil, Melcho O. |
