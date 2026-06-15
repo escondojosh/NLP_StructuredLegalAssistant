@@ -234,5 +234,3 @@ Opens at `http://localhost:8501`
 ## 📄 License
 
 For academic use only. Ordinance documents are property of the Manila City Government.
-ENDOFFILE
-echo "Done"
