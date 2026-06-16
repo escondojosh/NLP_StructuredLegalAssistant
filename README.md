@@ -35,7 +35,7 @@ Built as a research project for **CCS 311 - CS33S1** at the **Technological Inst
 | Vector Search (MiniLM) | 0.5760 | 0.6247 |
 | BM25 Keyword Search | 0.4400 | 0.5800 |
 
-these results indicate that the vector-based retrieval approach is likely providing better search quality than traditional keyword-based BM25 retrieval on your evaluation dataset.
+these results indicate that the vector-based retrieval approach is likely providing better search quality than traditional keyword-based BM25 retrieval on evaluation dataset.
 
 ---
 
