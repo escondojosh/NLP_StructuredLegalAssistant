@@ -129,8 +129,8 @@
     {
       "query": "Magkano ang multa pag naka-park sa no parking zone?",
       "relevant": [
-        "ORDINANCE-NO.-8092.pdf",
-        "ORDINANCE-NO.-8327.pdf"
+        "ORDINANCE-NO.-8327.pdf",
+        "ORDINANCE-NO.-8092.pdf"
       ],
       "vector_sources": [
         "ORDINANCE-NO.-8092.pdf",
@@ -202,8 +202,8 @@
     {
       "query": "Ano ang penalty kapag walang driver's license tapos nahuli?",
       "relevant": [
-        "ORDINANCE-NO.-8092.pdf",
-        "ORDINANCE-NO.-8327.pdf"
+        "ORDINANCE-NO.-8327.pdf",
+        "ORDINANCE-NO.-8092.pdf"
       ],
       "vector_sources": [
         "ORDINANCE-NO.-8331.pdf",

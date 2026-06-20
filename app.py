@@ -297,7 +297,7 @@ with tab1:
     with sc:
         query = st.text_input(
             label="query",
-            placeholder="Halimbawa: Pwede bang mag-barbecue sa labas ng bahay ko?",
+            placeholder="Halimbawa: Sino ang exempt sa pagbabayad ng real property tax sa Manila?",
             label_visibility="collapsed",
             key="query_input"
         )

@@ -5,7 +5,7 @@
 #   "relevant" — list of PDF filenames that contain the correct answer
 # Add or update entries as you manually verify which ordinance answers each question.
 
-GROUND_TRUTH = [
+GROUND_TRUTH = [ 
     # Environmental Code (8371)
     {"query": "Pwede bang magsunugan ng basura sa bakuran?",              "relevant": ["ORDINANCE-NO.-8371.pdf"]},
     {"query": "Ano ang parusa pag nagtapon ng basura sa ilog?",           "relevant": ["ORDINANCE-NO.-8371.pdf"]},
