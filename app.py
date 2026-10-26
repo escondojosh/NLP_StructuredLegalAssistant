@@ -268,7 +268,7 @@ Please explain what this ordinance says in simple Filipino-English (Taglish) tha
                 "Authorization": f"Bearer {api_key}"
             },
             json={
-                "model": "llama-3.3-70b-versatile",
+                "model": "llama-3.1-8b-instant",
                 "max_tokens": 1000,
                 "messages": [{"role": "user", "content": prompt}]
             },

@@ -1,15 +1,21 @@
 {
-  "total_queries": 30,
+  "total_queries": 98,
   "k": 5,
-  "vector_precision_at_k": 0.5533,
-  "vector_mrr": 0.6272,
-  "bm25_precision_at_k": 0.5667,
-  "bm25_mrr": 0.6206,
+  "vector_precision_at_k": 0.6286,
+  "vector_recall_at_k": 0.8316,
+  "vector_mrr": 0.773,
+  "vector_accuracy": 0.6939,
+  "bm25_precision_at_k": 0.6551,
+  "bm25_recall_at_k": 0.7908,
+  "bm25_mrr": 0.706,
+  "bm25_accuracy": 0.602,
+  "cohens_kappa_explanation_rating": 0.7115,
   "results": [
     {
       "query": "Anong oras bawal ang malalaking truck sa city streets ng Manila?",
       "relevant": [
-        "ORDINANCE-NO-8092.txt"
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
       ],
       "vector_sources": [
         "ORDINANCE-NO-8371.txt",
@@ -25,15 +31,20 @@
         "ORDINANCE-NO-8092.txt",
         "ORDINANCE-NO-8092.txt"
       ],
-      "vector_precision": 0.2,
-      "vector_mrr": 0.2,
-      "bm25_precision": 0.8,
-      "bm25_mrr": 1.0
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Hanggang anong oras lang pwedeng mag-overnight parking sa kalsada?",
       "relevant": [
-        "ORDINANCE-NO-8092.txt"
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
       ],
       "vector_sources": [
         "ORDINANCE-NO-8092.txt",
@@ -50,9 +61,13 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 1.0,
+      "vector_recall": 0.5,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 1.0,
-      "bm25_mrr": 1.0
+      "bm25_recall": 0.5,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Pwede bang lumabag sa traffic signal ang ambulance o fire truck?",
@@ -74,14 +89,19 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 1.0,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 1.0,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Araw-araw ba ang number coding sa Manila o may exemption sa weekend?",
       "relevant": [
-        "ORDINANCE-NO-8092.txt"
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
       ],
       "vector_sources": [
         "ORDINANCE-NO-9170.txt",
@@ -98,9 +118,13 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 0.0,
+      "vector_recall": 0.0,
       "vector_mrr": 0.0,
+      "vector_acc": 0.0,
       "bm25_precision": 0.8,
-      "bm25_mrr": 1.0
+      "bm25_recall": 0.5,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "May bayad ba kung mag-park sa harap ng sarili mong bahay o negosyo sa Manila?",
@@ -122,9 +146,13 @@
         "ORDINANCE-NO-8331.txt"
       ],
       "vector_precision": 0.0,
+      "vector_recall": 0.0,
       "vector_mrr": 0.0,
+      "vector_acc": 0.0,
       "bm25_precision": 0.4,
-      "bm25_mrr": 0.5
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
     },
     {
       "query": "Kailangan bang magsuot ng helmet ang motorcyclist sa Manila?",
@@ -146,14 +174,19 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 0.8,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.8,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Pwede bang magmaneho ng sasakyan habang naka-tsinelas?",
       "relevant": [
-        "ORDINANCE-NO-8092.txt"
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
       ],
       "vector_sources": [
         "ORDINANCE-NO-8327.txt",
@@ -169,14 +202,388 @@
         "ORDINANCE-NO-8092.txt",
         "ORDINANCE-NO-8092.txt"
       ],
-      "vector_precision": 0.2,
-      "vector_mrr": 0.2,
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.8,
-      "bm25_mrr": 0.5
+      "bm25_recall": 0.5,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Ilang kilometro kada oras ang maximum speed sa mga main street at boulevard ng Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Gaano kalapit pwede mag-park sa fire hydrant?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.25,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Kailangan bang mag-seatbelt ang driver at pasahero sa harap ng sasakyan sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Gaano kalayo dapat ang sasakyan kapag sumusunod sa ambulansya na may emergency?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.2,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.2,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Bawal bang dumaan o mag-park ang kotse at motor sa bike lane?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Pwede bang mag-overnight parking sa kalsada ang malaking cargo truck na eight wheels pataas?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 0.5,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Bawal ba magmaneho ng sasakyan kapag nakainom ng alak o gamot sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.0,
+      "vector_recall": 0.0,
+      "vector_mrr": 0.0,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Anong oras ipinagbabawal ang sasakyan na may plate ending sa coding day?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Exempted ba ang motorsiklo sa number coding ng Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 0.333,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Anong araw bawal ang sasakyan na ang plaka ay nagtatapos sa 5 o 6?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.0,
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Kailangan ba ng ilaw ang bisikleta kapag gabi?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Pwede bang dumaan ang tricycle sa national road sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 0.5,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Bawal bang gumamit ng cellphone habang nagmamaneho ng pampasaherong sasakyan?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 0.5,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
     },
     {
       "query": "Magkano ang multa pag nasakay ka sa yellow box intersection?",
       "relevant": [
+        "ORDINANCE-NO-8092.txt",
         "ORDINANCE-NO-8327.txt"
       ],
       "vector_sources": [
@@ -193,14 +600,19 @@
         "ORDINANCE-NO-8092.txt",
         "ORDINANCE-NO-8092.txt"
       ],
-      "vector_precision": 0.2,
-      "vector_mrr": 0.25,
-      "bm25_precision": 0.4,
-      "bm25_mrr": 0.5
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Ano ang penalty ng jaywalking sa Manila?",
       "relevant": [
+        "ORDINANCE-NO-8092.txt",
         "ORDINANCE-NO-8327.txt"
       ],
       "vector_sources": [
@@ -217,15 +629,20 @@
         "ORDINANCE-NO-9170.txt",
         "ORDINANCE-NO-9170.txt"
       ],
-      "vector_precision": 0.4,
-      "vector_mrr": 0.5,
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.0,
-      "bm25_mrr": 0.0
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
     },
     {
       "query": "Magkano ang multa ng sasakyan na smoke belching sa Manila?",
       "relevant": [
-        "ORDINANCE-NO-8327.txt"
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8371.txt"
       ],
       "vector_sources": [
         "ORDINANCE-NO-8371.txt",
@@ -241,10 +658,272 @@
         "ORDINANCE-NO-9107.txt",
         "ORDINANCE-NO-8327.txt"
       ],
+      "vector_precision": 0.4,
+      "vector_recall": 0.5,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Paano hinahati ang nakolektang multa para sa mga traffic enforcer?",
+      "relevant": [
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.2,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.333,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.0,
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Ano ang non-contact apprehension at kailan ito pwedeng gamitin?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Saan lang pwedeng magbaba at magsakay ng pasahero ang provincial bus sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.2,
+      "vector_recall": 0.5,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang multa sa unang paglabag sa loading at unloading zone?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang multa ng sasakyang walang franchise o hindi covered ng CPC?",
+      "relevant": [
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
       "vector_precision": 0.0,
+      "vector_recall": 0.0,
       "vector_mrr": 0.0,
+      "vector_acc": 0.0,
       "bm25_precision": 0.2,
-      "bm25_mrr": 0.2
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.333,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Magkano ang multa sa pangatlong beses na jaywalking?",
+      "relevant": [
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.2,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.0,
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Pwede bang maningil ng mas mataas sa LTFRB na pamasahe ang vehicle-for-hire na walang ruta?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Bawal bang maglagay ng signboard o awning sa sidewalk na hindi konektado sa negosyo?",
+      "relevant": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.0,
+      "vector_recall": 0.0,
+      "vector_mrr": 0.0,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.0,
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Saan ang mga designated bus loading at unloading area sa Taft Avenue at Quirino?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Sino ang hindi kailangang magbayad ng real property tax sa Manila?",
@@ -266,9 +945,13 @@
         "ORDINANCE-NO-8331.txt"
       ],
       "vector_precision": 0.8,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 1.0,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Magkano ang real property tax rate para sa residential at commercial na lote sa Manila?",
@@ -290,9 +973,13 @@
         "ORDINANCE-NO-8331.txt"
       ],
       "vector_precision": 0.8,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 1.0,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "May diskwento ba kung magbayad ng real property tax bago mag-January 31?",
@@ -314,9 +1001,13 @@
         "ORDINANCE-NO-8331.txt"
       ],
       "vector_precision": 1.0,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 1.0,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Pwede bang hulugin sa apat na installment ang real property tax sa Manila?",
@@ -338,9 +1029,13 @@
         "ORDINANCE-NO-8331.txt"
       ],
       "vector_precision": 0.8,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 1.0,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Paano kinukuwenta ang business tax ng manufacturer o assembler sa Manila?",
@@ -362,13 +1057,328 @@
         "ORDINANCE-NO-8331.txt"
       ],
       "vector_precision": 0.0,
+      "vector_recall": 0.0,
       "vector_mrr": 0.0,
+      "vector_acc": 0.0,
       "bm25_precision": 1.0,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Ano ang karagdagang 1% na buwis para sa Special Education Fund?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang buwis sa idle land o lupang walang pakinabang sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang interest kapag late magbayad ng real property tax?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang diskwento kung quarterly ang bayad ng real property tax?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang transfer tax kapag nagbenta o nag-donate ng lupa sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang annual professional tax ng mga propesyonal sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Ilang porsyento ang buwis ng karinderya o restaurant sa benta ng pagkain?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Magkano ang business tax ng mga call center at IT company sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.0,
+      "vector_recall": 0.0,
+      "vector_mrr": 0.0,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang basic community tax o cedula sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Saan muna napupunta ang binayad na real property tax kung may atraso sa nakaraang taon?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Ilang porsyento ng gross receipts ang buwis ng may-ari ng pribadong palengke o shopping center?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Anong mga bagay sa bahay ang bawal dahil breeding site ng lamok?",
       "relevant": [
+        "ORDINANCE-NO-8371.txt",
         "ORDINANCE-NO-8355.txt"
       ],
       "vector_sources": [
@@ -386,9 +1396,13 @@
         "ORDINANCE-NO-8355.txt"
       ],
       "vector_precision": 0.6,
+      "vector_recall": 0.5,
       "vector_mrr": 0.333,
+      "vector_acc": 0.0,
       "bm25_precision": 0.6,
-      "bm25_mrr": 0.5
+      "bm25_recall": 0.5,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
     },
     {
       "query": "Magkano ang multa ng pangalawang pagkakataon na may mosquito breeding site sa property mo?",
@@ -410,9 +1424,13 @@
         "ORDINANCE-NO-9107.txt"
       ],
       "vector_precision": 1.0,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.4,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Ano ang tungkulin ng Barangay Watch Team sa paglaban sa dengue?",
@@ -434,9 +1452,13 @@
         "ORDINANCE-NO-8331.txt"
       ],
       "vector_precision": 1.0,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.4,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Kailan dapat dalhin sa ospital ang pasyente na may lagnat para sa dengue?",
@@ -458,9 +1480,13 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 1.0,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.0,
-      "bm25_mrr": 0.0
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
     },
     {
       "query": "Sino ang dapat mag-lead ng dengue task force sa paaralan?",
@@ -482,9 +1508,210 @@
         "ORDINANCE-NO-9107.txt"
       ],
       "vector_precision": 1.0,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.8,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Ilang beses pwedeng magkaroon ng dengue ang isang tao sa buong buhay niya?",
+      "relevant": [
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Anong uri ng lamok ang nagdadala ng dengue sa mga lungsod?",
+      "relevant": [
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Anong buwan pinakamataas ang kaso ng dengue at anong edad ang madalas tamaan?",
+      "relevant": [
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Gaano kadalas dapat mag-clean-up campaign ang barangay laban sa lamok?",
+      "relevant": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 0.5,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Ano ang mga danger signs ng dengue na dapat dalhin agad sa ospital?",
+      "relevant": [
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang inilaang pondo ng Manila para sa anti-dengue program?",
+      "relevant": [
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.4,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Ano ang parusa sa pangatlong paglabag sa anti-dengue ordinance?",
+      "relevant": [
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8355.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.4,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Bawal ba ang magsunog ng basura sa bakuran o labas ng bahay sa Manila?",
@@ -506,9 +1733,13 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 0.4,
+      "vector_recall": 1.0,
       "vector_mrr": 0.25,
+      "vector_acc": 0.0,
       "bm25_precision": 0.0,
-      "bm25_mrr": 0.0
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
     },
     {
       "query": "Magkano ang multa kung ang kalapit-bahay ay nagreklamo sa ingay ng iyong negosyo?",
@@ -530,9 +1761,13 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 0.0,
+      "vector_recall": 0.0,
       "vector_mrr": 0.0,
+      "vector_acc": 0.0,
       "bm25_precision": 0.0,
-      "bm25_mrr": 0.0
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
     },
     {
       "query": "Bawal ba ang dry sandblasting sa mga shipyard o shop sa Manila?",
@@ -554,9 +1789,13 @@
         "ORDINANCE-NO-8371.txt"
       ],
       "vector_precision": 0.4,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.6,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Paano dapat i-separate ang basura ng mga residente sa Manila?",
@@ -578,9 +1817,296 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 0.4,
+      "vector_recall": 1.0,
       "vector_mrr": 0.333,
+      "vector_acc": 0.0,
       "bm25_precision": 0.0,
-      "bm25_mrr": 0.0
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Bawal bang manigarilyo sa loob ng jeep o bus sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 0.5,
+      "vector_mrr": 0.333,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 0.333,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "May Materials Recovery Facility ba dapat sa bawat barangay?",
+      "relevant": [
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Kokolektahin ba ng basurero ang basurang hindi hiwalay ang nabubulok at hindi nabubulok?",
+      "relevant": [
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.0,
+      "vector_recall": 0.0,
+      "vector_mrr": 0.0,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.0,
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Gaano kadalas tinutukoy ng Mayor ang limit ng bilang ng motorized tricycle?",
+      "relevant": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 0.5,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Ano ang parusa sa unang paglabag sa pagbabawal ng dry sandblasting?",
+      "relevant": [
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_precision": 0.0,
+      "vector_recall": 0.0,
+      "vector_mrr": 0.0,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.4,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Bawal bang magtapon ng basura sa kalsada, eskinita, o tabing-ilog?",
+      "relevant": [
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.333,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.0,
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Magkano ang multa ng residente sa unang paglabag sa solid waste management rules?",
+      "relevant": [
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Saan napupunta ang nakolektang multa sa paglabag sa solid waste rules?",
+      "relevant": [
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Pwede bang pumutol ng puno sa tabi ng coastal road o parke sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Kailangan bang magpa-smoke emission test ang sasakyang na-impound bago i-release?",
+      "relevant": [
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 0.5,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 0.5,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Ano ang parusa ng loan shark na kumukuha ng 4Ps cash card bilang collateral?",
@@ -602,9 +2128,181 @@
         "ORDINANCE-NO-9107.txt"
       ],
       "vector_precision": 1.0,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 1.0,
-      "bm25_mrr": 1.0
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Ano ang mangyayari sa 4Ps beneficiary na pangatlong beses nag-pawn ng cash card?",
+      "relevant": [
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang multa sa 4Ps household na pangalawang beses nag-pawn ng cash card?",
+      "relevant": [
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Sino ang bumubuo sa Local Advisory Council na nagpapatupad ng 4Ps pawning ordinance?",
+      "relevant": [
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Saan ginagamit ang multang nakokolekta sa 4Ps cash card pawning?",
+      "relevant": [
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8327.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Pwede bang hawakan ng kamag-anak ang 4Ps cash card gamit ang notarized SPA?",
+      "relevant": [
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang multa sa money lender na pangatlong beses tumanggap ng 4Ps card bilang sangla?",
+      "relevant": [
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Pwede bang ipagawa sa ibang tao ang stall na inarkila mo sa palengke ng Manila?",
@@ -626,13 +2324,18 @@
         "ORDINANCE-NO-9170.txt"
       ],
       "vector_precision": 0.2,
+      "vector_recall": 1.0,
       "vector_mrr": 0.25,
+      "vector_acc": 0.0,
       "bm25_precision": 0.4,
-      "bm25_mrr": 0.25
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.25,
+      "bm25_acc": 0.0
     },
     {
       "query": "Magkano ang bayad sa araw-araw na rental ng stall sa Class A na palengke sa Manila?",
       "relevant": [
+        "ORDINANCE-NO-8331.txt",
         "ORDINANCE-NO-9170.txt"
       ],
       "vector_sources": [
@@ -649,10 +2352,14 @@
         "ORDINANCE-NO-8092.txt",
         "ORDINANCE-NO-8331.txt"
       ],
-      "vector_precision": 0.6,
-      "vector_mrr": 0.5,
-      "bm25_precision": 0.4,
-      "bm25_mrr": 0.5
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
     },
     {
       "query": "Ano ang mga kailangan para makapag-apply ng market stall sa Manila?",
@@ -674,9 +2381,13 @@
         "ORDINANCE-NO-9170.txt"
       ],
       "vector_precision": 0.8,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.6,
-      "bm25_mrr": 0.333
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.333,
+      "bm25_acc": 0.0
     },
     {
       "query": "Mawawala ba ang stall mo sa palengke kung hindi ka magbabayad ng rental ng dalawang buwan?",
@@ -698,9 +2409,13 @@
         "ORDINANCE-NO-9170.txt"
       ],
       "vector_precision": 0.6,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.6,
-      "bm25_mrr": 0.333
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.333,
+      "bm25_acc": 0.0
     },
     {
       "query": "Bawal ba ang mag-inject ng tubig sa karne o manok na ibinebenta sa palengke?",
@@ -722,9 +2437,354 @@
         "ORDINANCE-NO-8092.txt"
       ],
       "vector_precision": 0.4,
+      "vector_recall": 1.0,
       "vector_mrr": 1.0,
+      "vector_acc": 1.0,
       "bm25_precision": 0.0,
-      "bm25_mrr": 0.0
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Paano malalaman kung Class A ang isang public market sa Manila?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.4,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.333,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Magkano ang surcharge kapag late magbayad ng buwanang renta ng stall?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.8,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Magkano ang bayad ng delivery truck na papasok sa public market?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 0.5,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Hanggang ilang taon valid ang contract of lease ng market stall?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_precision": 0.2,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.25,
+      "vector_acc": 0.0,
+      "bm25_precision": 1.0,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Mas mahal ba ang renta ng stall sa corner sa harap ng palengke?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8371.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Sino ang papalit sa stall kapag namatay ang may-ari nito?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.25,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.6,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.333,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Ano ang mangyayari sa stall na sarado o iniwan nang 60 araw?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8327.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_precision": 0.2,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.333,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.2,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.2,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Pwede bang walang damit pang-itaas ang tindero sa palengke?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt",
+        "ORDINANCE-NO-8092.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 0.5,
+      "vector_acc": 0.0,
+      "bm25_precision": 0.0,
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Pwede bang mag-settle out of court ang unang paglabag sa market code?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "vector_precision": 0.6,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.2,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 1.0,
+      "bm25_acc": 1.0
+    },
+    {
+      "query": "Magkano ang bayad ng ambulant o transient vendor sa loob ng palengke?",
+      "relevant": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_precision": 1.0,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.8,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.5,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Magkano ang babayaran para makuha ang Certificate of Award ng bagong stall?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 1.0,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.2,
+      "bm25_recall": 1.0,
+      "bm25_mrr": 0.2,
+      "bm25_acc": 0.0
+    },
+    {
+      "query": "Kailangan bang mag-segregate ng basura ang mga stallholder sa palengke?",
+      "relevant": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8371.txt"
+      ],
+      "vector_sources": [
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-9170.txt",
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-9107.txt"
+      ],
+      "bm25_sources": [
+        "ORDINANCE-NO-9107.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt",
+        "ORDINANCE-NO-8331.txt"
+      ],
+      "vector_precision": 0.4,
+      "vector_recall": 0.5,
+      "vector_mrr": 1.0,
+      "vector_acc": 1.0,
+      "bm25_precision": 0.0,
+      "bm25_recall": 0.0,
+      "bm25_mrr": 0.0,
+      "bm25_acc": 0.0
     }
   ]
 }

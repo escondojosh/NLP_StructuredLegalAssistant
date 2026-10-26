@@ -1,142 +1,304 @@
 # ground_truth.py
-# Each entry has:
-#   "query"    — the Taglish test question
-#   "relevant" — list of TXT filenames that contain the correct answer
+# Multi-Relevance Taglish Query Ground Truth Mapping (98 Queries)
 
 GROUND_TRUTH = [
-
-    # ── ORDINANCE NO. 8092 — Traffic Management Code ─────────────────────────
-
-    # Sec. 93 — Truck ban hours (6am-9am, 4pm-9pm)
+    # ── TRAFFIC MANAGEMENT CODE & AMENDMENTS (8092 & 8327) ─────────────────────
     {"query": "Anong oras bawal ang malalaking truck sa city streets ng Manila?",
-     "relevant": ["ORDINANCE-NO-8092.txt"]},
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8327.txt"]},
 
-    # Sec. 54 — Overnight parking hours (10pm to 5am)
     {"query": "Hanggang anong oras lang pwedeng mag-overnight parking sa kalsada?",
-     "relevant": ["ORDINANCE-NO-8092.txt"]},
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8327.txt"]},
 
-    # Sec. 4 — Emergency vehicle exemptions
     {"query": "Pwede bang lumabag sa traffic signal ang ambulance o fire truck?",
      "relevant": ["ORDINANCE-NO-8092.txt"]},
 
-    # Sec. 136 — Color coding / number coding scheme
     {"query": "Araw-araw ba ang number coding sa Manila o may exemption sa weekend?",
-     "relevant": ["ORDINANCE-NO-8092.txt"]},
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8327.txt"]},
 
-    # Sec. 46 — Parking in front of residential/commercial establishment
     {"query": "May bayad ba kung mag-park sa harap ng sarili mong bahay o negosyo sa Manila?",
      "relevant": ["ORDINANCE-NO-8092.txt"]},
 
-    # Sec. 115 — Safety helmets for motorcyclists
     {"query": "Kailangan bang magsuot ng helmet ang motorcyclist sa Manila?",
      "relevant": ["ORDINANCE-NO-8092.txt"]},
 
-    # Sec. 97(e) — No driving in slippers or sleeveless
     {"query": "Pwede bang magmaneho ng sasakyan habang naka-tsinelas?",
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8327.txt"]},
+
+    {"query": "Ilang kilometro kada oras ang maximum speed sa mga main street at boulevard ng Manila?",
      "relevant": ["ORDINANCE-NO-8092.txt"]},
 
-    # ── ORDINANCE NO. 8327 — Traffic Code Amendment ───────────────────────────
+    {"query": "Gaano kalapit pwede mag-park sa fire hydrant?",
+     "relevant": ["ORDINANCE-NO-8092.txt"]},
 
-    # Fine for driving over yellow box
+    {"query": "Kailangan bang mag-seatbelt ang driver at pasahero sa harap ng sasakyan sa Manila?",
+     "relevant": ["ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Gaano kalayo dapat ang sasakyan kapag sumusunod sa ambulansya na may emergency?",
+     "relevant": ["ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Bawal bang dumaan o mag-park ang kotse at motor sa bike lane?",
+     "relevant": ["ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Pwede bang mag-overnight parking sa kalsada ang malaking cargo truck na eight wheels pataas?",
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8327.txt"]},
+
+    {"query": "Bawal ba magmaneho ng sasakyan kapag nakainom ng alak o gamot sa Manila?",
+     "relevant": ["ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Anong oras ipinagbabawal ang sasakyan na may plate ending sa coding day?",
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8327.txt"]},
+
+    {"query": "Exempted ba ang motorsiklo sa number coding ng Manila?",
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8327.txt"]},
+
+    {"query": "Anong araw bawal ang sasakyan na ang plaka ay nagtatapos sa 5 o 6?",
+     "relevant": ["ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Kailangan ba ng ilaw ang bisikleta kapag gabi?",
+     "relevant": ["ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Pwede bang dumaan ang tricycle sa national road sa Manila?",
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Bawal bang gumamit ng cellphone habang nagmamaneho ng pampasaherong sasakyan?",
+     "relevant": ["ORDINANCE-NO-8092.txt", "ORDINANCE-NO-8327.txt"]},
+
     {"query": "Magkano ang multa pag nasakay ka sa yellow box intersection?",
-     "relevant": ["ORDINANCE-NO-8327.txt"]},
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8092.txt"]},
 
-    # Jaywalking fines
     {"query": "Ano ang penalty ng jaywalking sa Manila?",
-     "relevant": ["ORDINANCE-NO-8327.txt"]},
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8092.txt"]},
 
-    # Smoke belching fines
     {"query": "Magkano ang multa ng sasakyan na smoke belching sa Manila?",
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Paano hinahati ang nakolektang multa para sa mga traffic enforcer?",
      "relevant": ["ORDINANCE-NO-8327.txt"]},
 
-    # ── ORDINANCE NO. 8331 — Omnibus Revenue Code ────────────────────────────
+    {"query": "Ano ang non-contact apprehension at kailan ito pwedeng gamitin?",
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8092.txt"]},
 
-    # Sec. 13 — Real property tax exemptions (churches, gov property, cooperatives)
+    {"query": "Saan lang pwedeng magbaba at magsakay ng pasahero ang provincial bus sa Manila?",
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Magkano ang multa sa unang paglabag sa loading at unloading zone?",
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Magkano ang multa ng sasakyang walang franchise o hindi covered ng CPC?",
+     "relevant": ["ORDINANCE-NO-8327.txt"]},
+
+    {"query": "Magkano ang multa sa pangatlong beses na jaywalking?",
+     "relevant": ["ORDINANCE-NO-8327.txt"]},
+
+    {"query": "Pwede bang maningil ng mas mataas sa LTFRB na pamasahe ang vehicle-for-hire na walang ruta?",
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Bawal bang maglagay ng signboard o awning sa sidewalk na hindi konektado sa negosyo?",
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Saan ang mga designated bus loading at unloading area sa Taft Avenue at Quirino?",
+     "relevant": ["ORDINANCE-NO-8327.txt", "ORDINANCE-NO-8092.txt"]},
+
+    # ── OMNIBUS REVENUE CODE & TAXATION (8331 & 9170) ─────────────────────────
     {"query": "Sino ang hindi kailangang magbayad ng real property tax sa Manila?",
      "relevant": ["ORDINANCE-NO-8331.txt"]},
 
-    # Sec. 7 — Basic real property tax rates (residential 1.5%, commercial 2%)
     {"query": "Magkano ang real property tax rate para sa residential at commercial na lote sa Manila?",
      "relevant": ["ORDINANCE-NO-8331.txt"]},
 
-    # Sec. 16 — Tax discount for advance/prompt payment (20% if paid before Jan 31)
     {"query": "May diskwento ba kung magbayad ng real property tax bago mag-January 31?",
      "relevant": ["ORDINANCE-NO-8331.txt"]},
 
-    # Sec. 15 — Real property tax payment in installments (4 equal installments)
     {"query": "Pwede bang hulugin sa apat na installment ang real property tax sa Manila?",
      "relevant": ["ORDINANCE-NO-8331.txt"]},
 
-    # Sec. 101 — Business tax for manufacturers based on gross sales
     {"query": "Paano kinukuwenta ang business tax ng manufacturer o assembler sa Manila?",
      "relevant": ["ORDINANCE-NO-8331.txt"]},
 
-    # ── ORDINANCE NO. 8355 — Anti-Dengue Ordinance ───────────────────────────
+    {"query": "Ano ang karagdagang 1% na buwis para sa Special Education Fund?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
 
-    # Sec. 11 — Prohibited breeding sites (uncovered containers, old tires, clogged gutters)
+    {"query": "Magkano ang buwis sa idle land o lupang walang pakinabang sa Manila?",
+     "relevant": ["ORDINANCE-NO-8331.txt", "ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Magkano ang interest kapag late magbayad ng real property tax?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Magkano ang diskwento kung quarterly ang bayad ng real property tax?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Magkano ang transfer tax kapag nagbenta o nag-donate ng lupa sa Manila?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Magkano ang annual professional tax ng mga propesyonal sa Manila?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Ilang porsyento ang buwis ng karinderya o restaurant sa benta ng pagkain?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Magkano ang business tax ng mga call center at IT company sa Manila?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Magkano ang basic community tax o cedula sa Manila?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Saan muna napupunta ang binayad na real property tax kung may atraso sa nakaraang taon?",
+     "relevant": ["ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Ilang porsyento ng gross receipts ang buwis ng may-ari ng pribadong palengke o shopping center?",
+     "relevant": ["ORDINANCE-NO-8331.txt", "ORDINANCE-NO-9170.txt"]},
+
+    # ── ANTI-DENGUE SANITATION ORDINANCE (8355) ──────────────────────────────
     {"query": "Anong mga bagay sa bahay ang bawal dahil breeding site ng lamok?",
-     "relevant": ["ORDINANCE-NO-8355.txt"]},
+     "relevant": ["ORDINANCE-NO-8355.txt", "ORDINANCE-NO-8371.txt"]},
 
-    # Sec. 12 — Penalties: 1st offense warning, 2nd P2000, 3rd P4000 or 6 months
     {"query": "Magkano ang multa ng pangalawang pagkakataon na may mosquito breeding site sa property mo?",
      "relevant": ["ORDINANCE-NO-8355.txt"]},
 
-    # Sec. 8 — Barangay Watch Team responsibilities (source reduction, clean-up campaigns)
     {"query": "Ano ang tungkulin ng Barangay Watch Team sa paglaban sa dengue?",
      "relevant": ["ORDINANCE-NO-8355.txt"]},
 
-    # Sec. 10 — Community responsibility (seek medical treatment if fever >2 days)
     {"query": "Kailan dapat dalhin sa ospital ang pasyente na may lagnat para sa dengue?",
      "relevant": ["ORDINANCE-NO-8355.txt"]},
 
-    # Sec. 9 — School Dengue Task Force (principal as chairman, grade 4-5 pupils as members)
     {"query": "Sino ang dapat mag-lead ng dengue task force sa paaralan?",
      "relevant": ["ORDINANCE-NO-8355.txt"]},
 
-    # ── ORDINANCE NO. 8371 — Environmental Code ──────────────────────────────
+    {"query": "Ilang beses pwedeng magkaroon ng dengue ang isang tao sa buong buhay niya?",
+     "relevant": ["ORDINANCE-NO-8355.txt"]},
 
-    # Art. V Sec. 9 — Incineration or open burning of solid waste is prohibited
+    {"query": "Anong uri ng lamok ang nagdadala ng dengue sa mga lungsod?",
+     "relevant": ["ORDINANCE-NO-8355.txt"]},
+
+    {"query": "Anong buwan pinakamataas ang kaso ng dengue at anong edad ang madalas tamaan?",
+     "relevant": ["ORDINANCE-NO-8355.txt"]},
+
+    {"query": "Gaano kadalas dapat mag-clean-up campaign ang barangay laban sa lamok?",
+     "relevant": ["ORDINANCE-NO-8355.txt", "ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Ano ang mga danger signs ng dengue na dapat dalhin agad sa ospital?",
+     "relevant": ["ORDINANCE-NO-8355.txt"]},
+
+    {"query": "Magkano ang inilaang pondo ng Manila para sa anti-dengue program?",
+     "relevant": ["ORDINANCE-NO-8355.txt"]},
+
+    {"query": "Ano ang parusa sa pangatlong paglabag sa anti-dengue ordinance?",
+     "relevant": ["ORDINANCE-NO-8355.txt"]},
+
+    # ── ENVIRONMENTAL CODE (8371) ─────────────────────────────────────────────
     {"query": "Bawal ba ang magsunog ng basura sa bakuran o labas ng bahay sa Manila?",
      "relevant": ["ORDINANCE-NO-8371.txt"]},
 
-    # Art. II Sec. 5 — Noise pollution penalties (1st: P300, 2nd: P400, 3rd: P600)
     {"query": "Magkano ang multa kung ang kalapit-bahay ay nagreklamo sa ingay ng iyong negosyo?",
      "relevant": ["ORDINANCE-NO-8371.txt"]},
 
-    # Art. II Sec. 4 — Dry sandblasting is strictly prohibited (Clean Air Act)
     {"query": "Bawal ba ang dry sandblasting sa mga shipyard o shop sa Manila?",
      "relevant": ["ORDINANCE-NO-8371.txt"]},
 
-    # Art. V Sec. 5 — Solid waste segregation required (biodegradable vs non-biodegradable)
     {"query": "Paano dapat i-separate ang basura ng mga residente sa Manila?",
      "relevant": ["ORDINANCE-NO-8371.txt"]},
 
-    # ── ORDINANCE NO. 9107 — 4Ps Cash Card Protection ────────────────────────
+    {"query": "Bawal bang manigarilyo sa loob ng jeep o bus sa Manila?",
+     "relevant": ["ORDINANCE-NO-8371.txt", "ORDINANCE-NO-8092.txt"]},
 
-    # Sec. 7 — Penalty for lenders: 1st offense P2000 fine + imprisonment 2 months
+    {"query": "May Materials Recovery Facility ba dapat sa bawat barangay?",
+     "relevant": ["ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Kokolektahin ba ng basurero ang basurang hindi hiwalay ang nabubulok at hindi nabubulok?",
+     "relevant": ["ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Gaano kadalas tinutukoy ng Mayor ang limit ng bilang ng motorized tricycle?",
+     "relevant": ["ORDINANCE-NO-8371.txt", "ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Ano ang parusa sa unang paglabag sa pagbabawal ng dry sandblasting?",
+     "relevant": ["ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Bawal bang magtapon ng basura sa kalsada, eskinita, o tabing-ilog?",
+     "relevant": ["ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Magkano ang multa ng residente sa unang paglabag sa solid waste management rules?",
+     "relevant": ["ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Saan napupunta ang nakolektang multa sa paglabag sa solid waste rules?",
+     "relevant": ["ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Pwede bang pumutol ng puno sa tabi ng coastal road o parke sa Manila?",
+     "relevant": ["ORDINANCE-NO-8371.txt"]},
+
+    {"query": "Kailangan bang magpa-smoke emission test ang sasakyang na-impound bago i-release?",
+     "relevant": ["ORDINANCE-NO-8371.txt", "ORDINANCE-NO-8327.txt"]},
+
+    # ── 4Ps CASH CARD PROTECTION (9107) ───────────────────────────────────────
     {"query": "Ano ang parusa ng loan shark na kumukuha ng 4Ps cash card bilang collateral?",
      "relevant": ["ORDINANCE-NO-9107.txt"]},
 
-    # ── ORDINANCE NO. 9170 — New Market Code of Manila ───────────────────────
+    {"query": "Ano ang mangyayari sa 4Ps beneficiary na pangatlong beses nag-pawn ng cash card?",
+     "relevant": ["ORDINANCE-NO-9107.txt"]},
 
-    # Sec. 21(e) — Sub-leasing of stalls is prohibited
+    {"query": "Magkano ang multa sa 4Ps household na pangalawang beses nag-pawn ng cash card?",
+     "relevant": ["ORDINANCE-NO-9107.txt"]},
+
+    {"query": "Sino ang bumubuo sa Local Advisory Council na nagpapatupad ng 4Ps pawning ordinance?",
+     "relevant": ["ORDINANCE-NO-9107.txt"]},
+
+    {"query": "Saan ginagamit ang multang nakokolekta sa 4Ps cash card pawning?",
+     "relevant": ["ORDINANCE-NO-9107.txt"]},
+
+    {"query": "Pwede bang hawakan ng kamag-anak ang 4Ps cash card gamit ang notarized SPA?",
+     "relevant": ["ORDINANCE-NO-9107.txt"]},
+
+    {"query": "Magkano ang multa sa money lender na pangatlong beses tumanggap ng 4Ps card bilang sangla?",
+     "relevant": ["ORDINANCE-NO-9107.txt"]},
+
+    # ── NEW MARKET CODE OF MANILA (9170) ──────────────────────────────────────
     {"query": "Pwede bang ipagawa sa ibang tao ang stall na inarkila mo sa palengke ng Manila?",
      "relevant": ["ORDINANCE-NO-9170.txt"]},
 
-    # Sec. 11 — Stall rental rates (Class A: P18/sqm for wet section)
     {"query": "Magkano ang bayad sa araw-araw na rental ng stall sa Class A na palengke sa Manila?",
-     "relevant": ["ORDINANCE-NO-9170.txt"]},
+     "relevant": ["ORDINANCE-NO-9170.txt", "ORDINANCE-NO-8331.txt"]},
 
-    # Sec. 20 — Qualifications to apply for stall (Filipino, 18+, Manila resident 6 months)
     {"query": "Ano ang mga kailangan para makapag-apply ng market stall sa Manila?",
      "relevant": ["ORDINANCE-NO-9170.txt"]},
 
-    # Sec. 21(b) — Lease cancellation after 60 days non-payment
     {"query": "Mawawala ba ang stall mo sa palengke kung hindi ka magbabayad ng rental ng dalawang buwan?",
      "relevant": ["ORDINANCE-NO-9170.txt"]},
 
-    # Sec. 36 — Injection of water in meat/dressed chicken strictly prohibited
     {"query": "Bawal ba ang mag-inject ng tubig sa karne o manok na ibinebenta sa palengke?",
      "relevant": ["ORDINANCE-NO-9170.txt"]},
 
+    {"query": "Paano malalaman kung Class A ang isang public market sa Manila?",
+     "relevant": ["ORDINANCE-NO-9170.txt"]},
+
+    {"query": "Magkano ang surcharge kapag late magbayad ng buwanang renta ng stall?",
+     "relevant": ["ORDINANCE-NO-9170.txt", "ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Magkano ang bayad ng delivery truck na papasok sa public market?",
+     "relevant": ["ORDINANCE-NO-9170.txt", "ORDINANCE-NO-8092.txt"]},
+
+    {"query": "Hanggang ilang taon valid ang contract of lease ng market stall?",
+     "relevant": ["ORDINANCE-NO-9170.txt"]},
+
+    {"query": "Mas mahal ba ang renta ng stall sa corner sa harap ng palengke?",
+     "relevant": ["ORDINANCE-NO-9170.txt", "ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Sino ang papalit sa stall kapag namatay ang may-ari nito?",
+     "relevant": ["ORDINANCE-NO-9170.txt"]},
+
+    {"query": "Ano ang mangyayari sa stall na sarado o iniwan nang 60 araw?",
+     "relevant": ["ORDINANCE-NO-9170.txt"]},
+
+    {"query": "Pwede bang walang damit pang-itaas ang tindero sa palengke?",
+     "relevant": ["ORDINANCE-NO-9170.txt"]},
+
+    {"query": "Pwede bang mag-settle out of court ang unang paglabag sa market code?",
+     "relevant": ["ORDINANCE-NO-9170.txt"]},
+
+    {"query": "Magkano ang bayad ng ambulant o transient vendor sa loob ng palengke?",
+     "relevant": ["ORDINANCE-NO-9170.txt", "ORDINANCE-NO-8331.txt"]},
+
+    {"query": "Magkano ang babayaran para makuha ang Certificate of Award ng bagong stall?",
+     "relevant": ["ORDINANCE-NO-9170.txt"]},
+
+    {"query": "Kailangan bang mag-segregate ng basura ang mga stallholder sa palengke?",
+     "relevant": ["ORDINANCE-NO-9170.txt", "ORDINANCE-NO-8371.txt"]},
 ]
