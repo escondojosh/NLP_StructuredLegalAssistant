@@ -59,7 +59,7 @@ The reported benchmark results should be interpreted according to the evaluation
 
 The project uses a two-pass preprocessing workflow:
 
-1. **Automated normalization:** Corrects structural issues such as broken lines, page-number noise, and inconsistent whitespace.
+1. **Automated normalization (`clean_ordinance.py`):** Corrects structural issues such as broken lines, re-aligns section/article headings, strips page-number noise, and collapses inconsistent whitespace.
 2. **Human verification:** Checks the extracted text against the original scanned ordinances, particularly numerical values, section numbers, and legal symbols.
 
 The purpose is to reduce OCR errors that can affect retrieval quality.
@@ -116,6 +116,7 @@ These findings suggest that text preprocessing can improve retrieval quality, wh
 | Embedding Model | `paraphrase-multilingual-MiniLM-L12-v2` |
 | Keyword Retrieval | BM25 using `rank-bm25` |
 | OCR | Tesseract OCR and `pdf2image` |
+| Text Preprocessing | Custom regex normalization via `clean_ordinance.py` |
 | Image Processing | Pillow |
 | Text Splitting | LangChain `RecursiveCharacterTextSplitter` |
 | AI Explanation | Groq API with LLaMA 3.3 70B |
@@ -124,28 +125,27 @@ These findings suggest that text preprocessing can improve retrieval quality, wh
 
 ## 📁 Project Structure
 
-The structure below describes the expected main files. Your actual repository may contain additional files or use slightly different names.
+The structure below describes the main files in the repository:
 
 ```text
 Legal-Assistant-NLP/
 │
 ├── data/
-│   └── ordinances/          # Ordinance documents and/or cleaned text files
+│   └── ordinances/          # Ordinance documents and cleaned text files
 │
 ├── chroma_db/               # Persistent vector database
 │
 ├── app.py                   # Streamlit web application
+├── clean_ordinance.py       # Two-pass text normalization & OCR artifact cleaner
 ├── ingest.py                # Text ingestion, chunking, and indexing
-├── evaluate.py              # Retrieval evaluation
+├── evaluate.py              # Retrieval evaluation engine
 ├── ground_truth.py          # Annotated evaluation queries
 │
-├── evaluation_results.json  # Evaluation output, if generated
+├── evaluation_results.json  # Evaluation output JSON
 ├── .env                     # API keys, not committed to Git
 ├── .gitignore
 └── README.md
 ```
-
-**Note:** The actual files and their behavior depend on the version committed to your repository.
 
 ---
 
@@ -178,15 +178,11 @@ Extract it and locate the directory containing the Poppler executables. A common
 C:\poppler\Library\bin
 ```
 
-Your installation path may differ.
-
 ---
 
 ## 🚀 Setup and Installation
 
 ### 1. Clone the Repository
-
-Replace the placeholder with your actual GitHub repository URL.
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/Legal-Assistant-NLP.git
@@ -219,7 +215,7 @@ Install the packages used by the project:
 pip install streamlit langchain langchain-huggingface langchain-chroma langchain-core langchain-text-splitters chromadb sentence-transformers rank-bm25 pytesseract pdf2image Pillow python-dotenv requests
 ```
 
-If the repository contains a `requirements.txt`, prefer installing the pinned dependencies with:
+Or install using `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
@@ -227,7 +223,7 @@ pip install -r requirements.txt
 
 ### 4. Configure OCR Paths
 
-Open `ingest.py` and verify that the Tesseract and Poppler paths match your computer.
+Open `ingest.py` and verify that the Tesseract and Poppler paths match your system.
 
 Example for Windows:
 
@@ -235,8 +231,6 @@ Example for Windows:
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 POPPLER_PATH = r'C:\poppler\Library\bin'
 ```
-
-Only change these values if your local installation uses different paths.
 
 ### 5. Configure the Groq API Key
 
@@ -246,102 +240,94 @@ Create a `.env` file in the project root:
 GROQ_API_KEY=your_groq_api_key_here
 ```
 
-Obtain an API key through the [Groq Console](https://console.groq.com).
+Obtain an API key through the [Groq Console](https://console.groq.com). Add `.env` to `.gitignore`.
 
-**Security:** Never commit your real `.env` file or API key to GitHub. Add `.env` to `.gitignore`.
+### 6. Add Ordinance Documents
 
-### 6. Add the Ordinance Documents
-
-Place the required ordinance PDFs or the files expected by your ingestion script in:
+Place the ordinance `.txt` or PDF files in:
 
 ```text
 data/ordinances/
 ```
 
-The ordinance corpus covers:
-
-- Ordinance No. 8092, Traffic Management Code
-- Ordinance No. 8327, Traffic Code Amendment
-- Ordinance No. 8331, Omnibus Revenue Code
-- Ordinance No. 8355, Anti-Dengue Ordinance
-- Ordinance No. 8371, Environmental Code
-- Ordinance No. 9107, 4Ps Cash Card Protection
-- Ordinance No. 9170, New Market Code
-
-Use the [City Council of Manila official website](https://citycouncilofmanila.com.ph/city-ordinances/) to locate available ordinance documents.
+Corpus coverage:
+- Ordinance No. 8092 (Traffic Management Code)
+- Ordinance No. 8327 (Traffic Code Amendment)
+- Ordinance No. 8331 (Omnibus Revenue Code)
+- Ordinance No. 8355 (Anti-Dengue Ordinance)
+- Ordinance No. 8371 (Environmental Code)
+- Ordinance No. 9107 (4Ps Cash Card Protection)
+- Ordinance No. 9170 (New Market Code)
 
 ---
 
 ## ▶️ Running the Project
 
-Run these commands from the project root with the virtual environment activated.
+### Step 1: Preprocess and Clean Ordinance Text
 
-### Step 1: Build the Index
+Run `clean_ordinance.py` to normalize raw OCR text files, fix fractured line breaks, and align section headers:
+
+```bash
+python clean_ordinance.py
+```
+
+This generates normalized text files ready for indexing in `cleaned_ordinances/`.
+
+### Step 2: Build the Index
 
 ```bash
 python ingest.py
 ```
 
-The ingestion process prepares the text, splits it into chunks, creates multilingual embeddings, and builds the vector database. Processing time depends on the document sizes and your computer.
+Splits text into chunks, computes `paraphrase-multilingual-MiniLM-L12-v2` embeddings, builds ChromaDB, and compiles the BM25 index.
 
-Follow the output from the script to confirm that indexing completed successfully.
-
-### Step 2: Run the Evaluation
+### Step 3: Run Evaluation
 
 ```bash
 python evaluate.py
 ```
 
-This runs the evaluation implemented in the repository and may generate `evaluation_results.json`.
+Runs the 98-query benchmark and outputs Precision@5, Recall@5, MRR, Top-1 Accuracy, and Cohen's Kappa ($\kappa$) into `evaluation_results.json`.
 
-The exact query count, metrics, and output format depend on the current version of `evaluate.py` and its associated ground-truth data.
-
-### Step 3: Launch the Web Application
+### Step 4: Launch Web Application
 
 ```bash
 streamlit run app.py
 ```
 
-Open the local address displayed in the terminal. Streamlit commonly uses:
-
-```text
-http://localhost:8501
-```
+Access the application interface at `http://localhost:8501`.
 
 ---
 
 ## 🖥️ Features
 
 - **Taglish Search:** Search ordinance content using natural Filipino-English questions.
-- **Semantic Vector Search:** Retrieves passages based on semantic similarity.
-- **BM25 Keyword Search:** Retrieves passages based on keyword matching.
-- **OCR Preprocessing:** Converts scanned ordinance content into searchable text.
-- **AI-Generated Explanations:** Produces plain-language Taglish summaries of retrieved ordinance content.
-- **Retrieval Evaluation:** Compares retrieval methods using the metrics implemented in the project.
+- **Text Preprocessing (`clean_ordinance.py`):** Normalizes line wraps, aligns section headings, and strips OCR noise.
+- **Semantic Vector Search:** Retrieves passages based on semantic similarity (`MiniLM` + ChromaDB).
+- **BM25 Keyword Search:** Retrieves passages based on exact token match.
+- **AI-Generated Explanations:** Produces plain-language Taglish summaries of retrieved ordinances via LLaMA 3.3 70B.
+- **Retrieval Evaluation:** Benchmarks retrieval performance with Precision@5, Recall@5, MRR, Top-1 Accuracy, and Cohen's Kappa.
 
 ---
 
 ## ⚠️ Limitations
 
-- OCR errors may remain in low-quality or heavily degraded scanned documents.
-- Taglish slang, spelling variations, and regional expressions may affect retrieval quality.
-- The corpus is limited to the included Manila City ordinances.
-- The system is informational and does not replace professional legal advice.
-- The system does not automatically verify whether an ordinance has been amended, repealed, or superseded.
-- AI-generated explanations should be checked against the retrieved ordinance text.
+- OCR errors may remain in heavily degraded scanned documents.
+- Heavy Taglish slang or regional dialects may cause slight retrieval friction.
+- Corpus is limited to the included 7 Manila City ordinances.
+- Serves an informational purpose and does not replace formal legal advice.
+- Does not automatically verify whether an ordinance has been superseded or amended by national law.
 
 ---
 
 ## 🔮 Future Work
 
-- Improve OCR correction and legal-text normalization.
-- Expand the corpus to include more ordinances from Manila and other local government units.
-- Investigate Reciprocal Rank Fusion (RRF) to combine vector and keyword rankings.
-- Fine-tune multilingual embeddings using Taglish legal query-passage pairs.
-- Improve validation of generated explanations against the original legal text.
+- Implement Reciprocal Rank Fusion (RRF) to merge vector and keyword search ranks.
+- Fine-tune sentence transformers on Taglish legal query-passage pairs.
+- Expand corpus to include additional LGUs across Metro Manila.
 
 ---
 
 ## 📄 License
 
-For academic use only. Ordinance documents remain subject to the applicable ownership and usage terms of the Manila City Government.
+For academic use only. Ordinance documents remain subject to the applicable terms of the Manila City Government.
